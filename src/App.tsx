@@ -217,7 +217,7 @@ const getDirection = (bearing: number) => {
 };
 
 export default function App() {
-  const [activeTab, setActiveTab] = useState<'GF' | 'SB'>('SB');
+  const [activeTab, setActiveTab] = useState<'GF' | 'SB'>('GF');
   const [sailingFerries, setSailingFerries] = useState<VehicleActivity[]>([]);
   const [gtfsTrips, setGtfsTrips] = useState<GtfsTrip[]>([]);
   const [alerts, setAlerts] = useState<Alert[]>([]);
@@ -981,24 +981,24 @@ export default function App() {
 
         <div className="flex space-x-2 md:space-x-4 mb-8">
           <button
-            onClick={() => setActiveTab('SB')}
-            className={`px-3 md:px-6 py-2 md:py-3 font-pirate text-xl md:text-2xl tracking-wider rounded-t-lg transition-colors border-t-2 border-l-2 border-r-2 whitespace-nowrap ${
-              activeTab === 'SB' 
-                ? 'bg-amber-100 text-amber-900 border-amber-700' 
-                : 'bg-amber-900/50 text-amber-200 border-transparent hover:bg-amber-800/50'
-            }`}
-          >
-            SF Bay Ferries
-          </button>
-          <button
             onClick={() => setActiveTab('GF')}
             className={`px-3 md:px-6 py-2 md:py-3 font-pirate text-xl md:text-2xl tracking-wider rounded-t-lg transition-colors border-t-2 border-l-2 border-r-2 whitespace-nowrap ${
-              activeTab === 'GF' 
-                ? 'bg-amber-100 text-amber-900 border-amber-700' 
+              activeTab === 'GF'
+                ? 'bg-amber-100 text-amber-900 border-amber-700'
                 : 'bg-amber-900/50 text-amber-200 border-transparent hover:bg-amber-800/50'
             }`}
           >
             GG Ferries
+          </button>
+          <button
+            onClick={() => setActiveTab('SB')}
+            className={`px-3 md:px-6 py-2 md:py-3 font-pirate text-xl md:text-2xl tracking-wider rounded-t-lg transition-colors border-t-2 border-l-2 border-r-2 whitespace-nowrap ${
+              activeTab === 'SB'
+                ? 'bg-amber-100 text-amber-900 border-amber-700'
+                : 'bg-amber-900/50 text-amber-200 border-transparent hover:bg-amber-800/50'
+            }`}
+          >
+            SF Bay Ferries
           </button>
         </div>
 
