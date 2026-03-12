@@ -1,5 +1,5 @@
 import { VercelRequest, VercelResponse } from '@vercel/node';
-import { getGtfsStops } from '../../gtfs';
+import { getGtfsStops } from '../../gtfs.js';
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   try {

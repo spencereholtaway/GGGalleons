@@ -1,5 +1,5 @@
 import { VercelRequest, VercelResponse } from '@vercel/node';
-import { getNextScheduledTrips } from '../../gtfs';
+import { getNextScheduledTrips } from '../../gtfs.js';
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   try {
