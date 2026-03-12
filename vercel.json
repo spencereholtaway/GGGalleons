@@ -1,8 +1,5 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
-  "devCommand": "npm run dev",
-  "env": {
-    "TRANSIT_511_API_KEY": "@transit_511_api_key"
-  }
+  "devCommand": "npm run dev"
 }
