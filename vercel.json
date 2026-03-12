@@ -1,0 +1,9 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "devCommand": "npm run dev",
+  "env": {
+    "GEMINI_API_KEY": "@gemini_api_key",
+    "TRANSIT_511_API_KEY": "@transit_511_api_key"
+  }
+}
