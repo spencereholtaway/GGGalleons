@@ -1,0 +1,5 @@
+{
+  "name": "Ye Golden Gate Galleons",
+  "description": "Tracks currently sailing and scheduled Golden Gate Ferries using the 511.org API.",
+  "requestFramePermissions": []
+}
