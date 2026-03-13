@@ -1087,6 +1087,7 @@ export default function App() {
             <p className="text-amber-500/70 text-sm font-mono">
               Last sighted: {format(lastUpdated, 'HH:mm:ss')}
             </p>
+            <div id="bmc-button"></div>
           </div>
         )}
       </div>
