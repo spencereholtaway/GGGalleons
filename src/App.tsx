@@ -1087,7 +1087,17 @@ export default function App() {
             <p className="text-amber-500/70 text-sm font-mono">
               Last sighted: {format(lastUpdated, 'HH:mm:ss')}
             </p>
-            <div id="bmc-button"></div>
+            <a
+              href="https://www.buymeacoffee.com/holtaway"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', marginTop: '32px', backgroundColor: '#FFDD00', color: '#000', border: '2px solid #000', borderRadius: '6px', padding: '10px 20px', fontFamily: 'Poppins, sans-serif', fontSize: '14px', fontWeight: 600, textDecoration: 'none', transition: 'transform 0.2s' }}
+              onMouseOver={e => (e.currentTarget.style.transform = 'scale(1.05)')}
+              onMouseOut={e => (e.currentTarget.style.transform = 'scale(1)')}
+            >
+              <img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" alt="coffee" style={{ width: '20px', height: '20px' }} />
+              Buy me a coffee?
+            </a>
           </div>
         )}
       </div>
