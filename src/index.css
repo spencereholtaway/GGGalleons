@@ -4,3 +4,46 @@
 @theme {
   --font-fell: "IM Fell DW Pica", serif;
 }
+
+/* Buy Me a Coffee Button Styling */
+#bmc-button {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 40;
+  padding-bottom: env(safe-area-inset-bottom);
+  padding-right: env(safe-area-inset-right);
+}
+
+#bmc-button button {
+  background-color: #FFDD00 !important;
+  color: #000000 !important;
+  border: 2px solid #000000 !important;
+  padding: 0.5rem 1rem !important;
+  font-size: 0.875rem !important;
+  border-radius: 0.375rem !important;
+  font-weight: 600 !important;
+  transition: all 0.2s !important;
+}
+
+#bmc-button button:hover {
+  background-color: #FFD500 !important;
+  transform: scale(1.05);
+}
+
+#bmc-button button:active {
+  transform: scale(0.95);
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  #bmc-button {
+    bottom: 4.5rem;
+    right: 1.5rem;
+  }
+
+  #bmc-button button {
+    padding: 0.5rem 0.75rem !important;
+    font-size: 0.75rem !important;
+  }
+}
